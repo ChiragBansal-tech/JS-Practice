@@ -1,0 +1,234 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px ;
+    grid-template-rows: auto 1fr auto;
+  
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+.col-header{
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    background-color: aqua;
+    border: 3px solid black;
+}
+
+.col-menu{
+    grid-column: 1/2;
+    height: 100%;
+    background-color: rgb(95, 112, 225);   
+}
+
+.col-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.col-menu li{
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color:   rgb(15, 232, 210);
+    color: rgb(30, 13, 13);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0,0.24);
+    border: 2px solid black;
+}
+
+.col-right{
+    grid-column: 3/4;
+    height: 100%;
+    background-color: rgb(95, 112, 225);
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0,0.24);    
+}
+
+.col-content{
+    grid-column: 2/3; 
+    border: 2px solid black;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}
+
+@media only screen and (min-width: 600px) {
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}
+
+@media only screen and (min-width: 992px) {
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}
+
+@media only screen and (min-width: 1200px) {
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}
+
+
+
+
+
+#im{
+    position: fixed;
+    top: 10px; 
+    right: 70px;
+    width: 60px;
+    height: 60px;  
+    
+}
+
+
+.bx{      
+    position: fixed;
+    bottom: 50px;
+    right: 10px;  
+    border: 1px solid black;
+    background-color: rgb(206, 63, 63);
+    z-index: 1;
+}
+.atc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border-color: aqua;
+}
+.atc:hover {
+    background-color: aqua ;  
+    color: rgb(0, 0, 0);           
+    cursor: pointer;        
+}
+#buy{
+    position: fixed;
+    top: 77px; 
+    right: 65px;
+    height: 28px;
+    color: red;
+    border-radius: 5px;
+    font-weight: 700;
+    width: 70px;    
+
+}
+#buy:hover {
+    background-color: rgb(0, 0, 0)  ;  
+    color: white;           
+    cursor: pointer;        
+}
+
+#pay{
+    position: fixed;
+    bottom: 20px; 
+    border-radius: 5px;
+    background-color: white;
+    border: solid black;   
+}
+#pay:hover {
+    background-color: red;  
+    color: white;           
+    cursor: pointer;        
+}
+#im{
+    position: fixed;
+    top: 10px; 
+    right: 70px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;  
+    
+}
+
+#link{
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-weight: 700;
+    width: 150px;
+    height: 20px;
+}
+#link:hover {
+    background-color: rgb(118, 118, 187)  ;  
+    color: rgb(255, 255, 255);           
+    cursor: pointer;        
+}

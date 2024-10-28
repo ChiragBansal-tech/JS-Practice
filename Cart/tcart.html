@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart - Aztech Mart</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="col-header">
+            <h1><a href="home.html">Aztech Mart</a></h1>
+        </div>
+        <div class="col-menu">
+            <ul>
+                <li><a href="shoes.html"><button>Shoes</button></a></li>
+                <li><a href="shirt.html"><button>Shirt</button></a></li>
+                <li><a href="jeans.html"><button>Jeans</button></a></li>
+            </ul>
+        </div>
+
+        <div class="col-content">
+            <h1>Your Cart</h1>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically added here by JavaScript -->
+            </div>
+        </div>
+        <div class="col-right">
+            <div class="bx">
+                <h2>Grand Total:</h2>
+                <input type="text" name="grand-total" value="0" readonly>
+                <button id="pay" style="right: 25px;">Proceed to Payment</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

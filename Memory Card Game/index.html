@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div id="dynamic-cards" class="game-container">
+            <div class="heading-container">
+                <h1 class="main-heading">Memory Test</h1>
+                <h2 class="game-heading">Click on any card to flip</h2>
+            </div>
+            <div class="card-container">
+                <div class="row">
+                    <div class="card">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231122105630/gfgImage.png" class="common-front-image">
+                        <img src="#" id="1" class="card-image" style="display: none;">
+                    </div>
+                    <div class="card">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231122105630/gfgImage.png" class="common-front-image">
+                        <img src="#" id="2" class="card-image" style="display: none;">
+                    </div>
+                    <div class="card">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231122105630/gfgImage.png" class="common-front-image">
+                        <img src="#" id="3" class="card-image" style="display: none;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231122105630/gfgImage.png" class="common-front-image">
+                        <img src="#" id="4" class="card-image" style="display: none;">
+                    </div>
+                    <div class="card">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231122105630/gfgImage.png" class="common-front-image">
+                        <img src="#" id="5" class="card-image" style="display: none;">
+                    </div>
+                    <div class="card">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231122105630/gfgImage.png" class="common-front-image">
+                        <img src="#" id="6" class="card-image" style="display: none;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231122105630/gfgImage.png" class="common-front-image">
+                        <img src="#" id="7" class="card-image" style="display: none;">
+                    </div>
+                    <div class="card">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231122105630/gfgImage.png" class="common-front-image">
+                        <img src="#" id="8" class="card-image" style="display: none;">
+                    </div>
+                    <div class="card">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231122105630/gfgImage.png" class="common-front-image">
+                        <img src="#" id="9" class="card-image" style="display: none;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231122105630/gfgImage.png" class="common-front-image">
+                        <img src="#" id="10" class="card-image" style="display: none;">
+                    </div>
+                    <div class="card">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231122105630/gfgImage.png" class="common-front-image">
+                        <img src="#" id="11" class="card-image" style="display: none;">
+                    </div>
+                    <div class="card">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231122105630/gfgImage.png" class="common-front-image">
+                        <img src="#" id="12" class="card-image" style="display: none;">
+                    </div>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="move-count">Moves: 0</div>
+                <button id="restart" class="restart-button">Restart Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
